@@ -73,7 +73,19 @@
           <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" target="_">.style</a> (.style.backgroundColor = ...)</li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" target="_">'click'</a> event</li>
-            <li><a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_">onclick</a> (caveat: that's considered not-so-great 🤷‍♀️)</li>
+          </ul>
+        </p>
+        <p>
+          Notes:
+          <ul>
+            <li>You are required to <b>not use</b> things like <code>onclick=</code> in the html element,
+                please use instead JS code to add event handlers
+            </li>
+            <li>
+              Also note that there are 2 possible strategies. You can either attach one event handler on each square in the grid.
+              It is also possible to add a single event handler on the common father (<code>#grid</code>) of all the squares.
+              Fast students are encouraged t try and implement both approaches, and to compare their pros and cons.
+            </li>
           </ul>
         </p>
         <h2>Step 2-bis: check it works on new lines, too</h2>
@@ -106,7 +118,10 @@
           See:
           <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" target="_">classList</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event" target="_">'mouseenter'</a> event</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event" target="_">'mouseover' event</a>
+                - there is also a <code>mouseenter</code> event, but if you go for the second strategy above (one single event handler), 
+                then you will probably find <code>mouseover</code> to be more adapted
+            </li>
           </ul>
         </p>
         <h2>Step 4: Count the squares</h2>
@@ -143,8 +158,8 @@
         </p>
         <p>
           <b>NOTE:</b> this is harder than it seems. The childNodes property is somewhat like a list in Python. So if you
-          delete stuff from it while iterating, it <i>will</i> have uninteded consequences. 
-          First, list the nodes you want to remove, and in a second loop, remove them.
+          delete stuff from it while iterating it, this <b>will have</b> unintended consequences !
+          First, list the nodes you want to remove, and in a second loop, remove them (just like what the starter code does)
         </p>
         <p>
           See:
