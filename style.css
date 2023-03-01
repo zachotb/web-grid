@@ -31,3 +31,10 @@ h2 {
 #instructions {
   width: 600px;
 }
+
+#line {
+  width: 500px;
+  height: 5px;
+  margin: 5px;
+  background-color: rgb(0, 200, 255);
+}
